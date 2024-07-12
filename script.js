@@ -8,7 +8,8 @@ const recipes = [
             "Tamp the coffee evenly.",
             "Lock the portafilter into the machine.",
             "Start the extraction for 25-30 seconds."
-        ]
+        ],
+        image: "https://www.thespruceeats.com/thmb/HJrjMfXdLGHbgMhnM0fMkDx9XPQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-espresso-765702-hero-03_cropped-ffbc0c7cf45a46ff846843040c8f370c.jpg"
     },
     {
         name: "French Press Coffee",
@@ -19,7 +20,8 @@ const recipes = [
             "Place the lid on the French press and let it steep for 4 minutes.",
             "Press the plunger down slowly.",
             "Pour and enjoy."
-        ]
+        ],
+        image: "https://parachutecoffee.com/cdn/shop/articles/Untitled_design_51_800x.png?v=1667752021"
     },
     {
         name: "Cold Brew Coffee",
@@ -30,7 +32,8 @@ const recipes = [
             "Cover and let it steep in the fridge for 12-24 hours.",
             "Strain the coffee using a fine mesh sieve or coffee filter.",
             "Serve over ice with water or milk."
-        ]
+        ],
+        image: "https://storage.googleapis.com/gen-atmedia/3/2018/05/9eada0d203bfb580d801b478edd553465c7afb52.jpeg"
     },
     {
         name: "Cappuccino",
@@ -40,7 +43,8 @@ const recipes = [
             "Froth the milk using a steam wand until it’s creamy and slightly foamy.",
             "Pour the frothed milk over the espresso.",
             "Serve immediately."
-        ]
+        ],
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1200px-Cappuccino_at_Sightglass_Coffee.jpg"
     },
     {
         name: "Latte",
@@ -51,7 +55,8 @@ const recipes = [
             "Pour the steamed milk over the espresso.",
             "Top with a thin layer of foam.",
             "Serve immediately."
-        ]
+        ],
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/800px-Caffe_Latte_at_Pulse_Cafe.jpg"
     }
 ];
 
@@ -62,9 +67,11 @@ document.getElementById("generate-btn").addEventListener("click", () => {
     const recipeDiv = document.getElementById("recipe");
     recipeDiv.innerHTML = `
         <h2>${recipe.name}</h2>
+        <img src="${recipe.image}" alt="${recipe.name}" class="recipe-image">
         <h3>Ingredients:</h3>
         <ul>${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}</ul>
         <h3>Steps:</h3>
         <ol>${recipe.steps.map(step => `<li>${step}</li>`).join('')}</ol>
     `;
 });
+

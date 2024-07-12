@@ -1,6 +1,6 @@
 const recipes = [
-    {
-        name: "Classic Espresso",
+     {
+      name: "Classic Espresso",
         ingredients: ["18g finely ground coffee", "30ml water"],
         steps: [
             "Preheat your espresso machine.",
@@ -57,6 +57,64 @@ const recipes = [
             "Serve immediately."
         ],
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/800px-Caffe_Latte_at_Pulse_Cafe.jpg"
+    },
+    {
+        name: "Mocha",
+        ingredients: ["18g finely ground coffee", "240ml milk", "30ml chocolate syrup"],
+        steps: [
+            "Brew a shot of espresso.",
+            "Steam the milk until it’s creamy with a small amount of foam.",
+            "Add chocolate syrup to the espresso and mix well.",
+            "Pour the steamed milk over the espresso-chocolate mixture.",
+            "Top with a thin layer of foam and chocolate shavings.",
+            "Serve immediately."
+        ],
+        image: "https://www.thespruceeats.com/thmb/POPhcPYBWx7fNJu8Bc7YjS-Flso=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-mocha-4797918-hero-01-1-f8fb7ebd74914895b61366f6fc1d4b05.jpg"
+    },
+    {
+        name: "Macchiato",
+        ingredients: ["18g finely ground coffee", "30ml milk"],
+        steps: [
+            "Brew a shot of espresso.",
+            "Froth the milk until it’s creamy and slightly foamy.",
+            "Pour a small amount of the frothed milk over the espresso.",
+            "Serve immediately."
+        ],
+        image: "https://roastercoffees.com/wp-content/uploads/2021/05/Espresso-Macchiato-Recipe.webp"
+    },
+    {
+        name: "Affogato",
+        ingredients: ["18g finely ground coffee", "1 scoop vanilla ice cream"],
+        steps: [
+            "Brew a shot of espresso.",
+            "Place a scoop of vanilla ice cream in a serving glass.",
+            "Pour the hot espresso over the ice cream.",
+            "Serve immediately."
+        ],
+        image: "https://www.thespruceeats.com/thmb/5PcCBEaUd1U1eFxfcKKPLVnZzfA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/affogato-4776668-hero-08-40d7a68d12ba46f48eaea3c43aba715c.jpg"
+    },
+    {
+        name: "Irish Coffee",
+        ingredients: ["18g finely ground coffee", "30ml Irish whiskey", "1 tbsp brown sugar", "30ml heavy cream"],
+        steps: [
+            "Brew a strong cup of coffee.",
+            "Add brown sugar to the coffee and stir until dissolved.",
+            "Add the Irish whiskey and stir.",
+            "Top with lightly whipped heavy cream by pouring it over the back of a spoon.",
+            "Serve immediately."
+        ],
+        image: "https://www.thespruceeats.com/thmb/BaTQiJBdsmkbQvBZO6HaoeBoNgE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/original-irish-coffee-recipe-759311-Hero-5b759d4b46e0fb005089915e.jpg"
+    },
+    {
+        name: "Café au Lait",
+        ingredients: ["18g finely ground coffee", "240ml hot milk"],
+        steps: [
+            "Brew a strong cup of coffee.",
+            "Heat the milk until it’s hot but not boiling.",
+            "Combine the coffee and hot milk in a 1:1 ratio.",
+            "Serve immediately."
+        ],
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF6_BvjbPq4PH18XX2YQj8ISIvFK-cEmG3aA&s"
     }
 ];
 
